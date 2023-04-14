@@ -9,7 +9,6 @@ import * as bootstrap from 'bootstrap';
     url: 'https://picsum.photos/v2/list',
     button: document.getElementById('load-items'),
     container: document.getElementById('photos'),
-    cards: null,
     pageNum: 1,
     lorem: 'Lorem ipsum dolor sit amet',
     init() {

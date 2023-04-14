@@ -1,0 +1,127 @@
+$primary: #ed7135;
+$secondary: #666666;
+$light: #eeeeee;
+$dark: #292929;
+$black: #292929;
+$white: #fff;
+$body-color: #292929;
+$body-bg: #f5f5f5;
+$bg-dark: #292929;
+$card-bg: $white;
+
+$border-radius: .5rem;
+$border-color: #ebebeb;
+$light-border-subtle: #ebebeb;
+
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 1.5;
+$h6-font-size: $font-size-base * .9;
+$font-weight-bold: 700;
+$headings-font-weight: $font-weight-bold;
+$btn-font-weight: $font-weight-bold;
+
+$card-border-color: #ebebeb;
+$card-cap-padding-y: 1rem;
+
+[data-bs-theme='dark'] {
+  .card, .btn-dark {
+    background-color: $secondary;
+  }
+}
+
+@import "~bootstrap/scss/bootstrap";
+
+* {
+  font-family: Commissioner, serif;
+}
+
+.h1 {
+  line-height: 3.75rem;
+}
+
+.navbar {
+  min-height: 72px;
+}
+
+.search-form {
+  height: 40px;
+  border-radius: 100px;
+  padding: 8px 16px;
+}
+
+.search-form label {
+  margin-right: 12px;
+}
+
+input[type=search] {
+  border: none;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.nav-pills {
+  .nav-link {
+    font-weight: $font-weight-bold;
+
+    &:hover {
+      color: $secondary;
+      background-color: $light;
+    }
+
+    &.active {
+      &:hover {
+        color: $white;
+        background-color: $primary;
+      }
+    }
+  }
+}
+
+.nav-link {
+  color: $secondary;
+
+  svg {
+    margin-right: 8px;
+  }
+
+  &.active {
+    color: $white;
+
+    svg {
+      path {
+        fill: $white;
+      }
+    }
+  }
+}
+
+.btn-light {
+  border: 2px solid $border-color;
+  background-color: $white;
+}
+
+.card {
+  &-img-top {
+    object-fit: cover;
+    height: 200px;
+  }
+
+  &-body {
+    height: 150px;
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      height: 175px;
+    }
+  }
+}
+
+.link {
+  &-dark {
+    font-weight: $font-weight-bold;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg border-bottom mb-3">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="row collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="col-md-4">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Podcasts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <form class="d-flex search-form bg-light border" role="search">
+            <label for="search-input" class="d-flex justify-content-center align-items-center">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 20L16.05 16.05M18 11C18 14.866 14.866 18 11 18C7.13401 18 4 14.866 4 11C4 7.13401 7.13401 4 11 4C14.866 4 18 7.13401 18 11Z" stroke="#666666" stroke-width="2" stroke-linecap="square"/>
+              </svg>
+            </label>
+            <input id="search-input" class="bg-light w-100" type="search" placeholder="Search for anything..." aria-label="Search">
+          </form>
+        </div>
+        <div class="col-md-2">
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                English
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item disabled" href="#">Ukrainian to be added...</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ">Sign in</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row mb-3 mb-md-0">
+      <div class="col d-flex justify-content-end">
+        <div class="dropdown">
+          <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (light)">
+            <svg class="bi my-1 theme-icon-active" width="16" height="16"><use href="#sun-fill"></use></svg>
+            <span class="ms-2" id="bd-theme-text">Toggle theme</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
+                <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16"><use href="#sun-fill"></use></svg>
+                Light
+                <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16"><use href="#moon-stars-fill"></use></svg>
+                Dark
+                <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16"><use href="#circle-half"></use></svg>
+                Auto
+                <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <aside class="col-md-3 px-1 mb-3">
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center active" aria-current="page" href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 6.5C13.6193 6.5 12.5 7.61929 12.5 9C12.5 10.3807 13.6193 11.5 15 11.5C16.3807 11.5 17.5 10.3807 17.5 9C17.5 7.61929 16.3807 6.5 15 6.5Z" fill="#666666"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 3H21V21H18.5266L18.4945 21.0002H5.5L5.46787 21H3V3ZM19 12.8362C17.8552 13.898 16.7044 14.4537 15 14.4537C13.0944 14.4537 11.6208 13.2859 10.1527 11.7048C9.15108 10.6262 7.51491 10.4335 6.29018 11.25L6.26758 11.2651L5 12.2134V5H19V12.8362Z" fill="#666666"/>
+              </svg>
+              All photos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.5 12C17.5 15.0376 15.0376 17.5 12 17.5C8.96243 17.5 6.5 15.0376 6.5 12M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#666666" stroke-width="2"/>
+                <path d="M11 9C11 9.82843 10.3284 10.5 9.5 10.5C8.67157 10.5 8 9.82843 8 9C8 8.17157 8.67157 7.5 9.5 7.5C10.3284 7.5 11 8.17157 11 9Z" fill="#666666"/>
+                <path d="M16 9C16 9.82843 15.3284 10.5 14.5 10.5C13.6716 10.5 13 9.82843 13 9C13 8.17157 13.6716 7.5 14.5 7.5C15.3284 7.5 16 8.17157 16 9Z" fill="#666666"/>
+              </svg>
+
+              Selfies
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 8V12L14.5 14.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#666666" stroke-width="2" stroke-linecap="square"/>
+              </svg>
+              Recent
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 21L5.00221 21.0665L5.06445 22H6V21ZM18 21V22H18.9356L18.9978 21.0665L18 21ZM3 5H2V7H3V5ZM21 7H22V5H21V7ZM11 11V10H9V11H11ZM9 16V17H11V16H9ZM15 11V10H13V11H15ZM13 16V17H15V16H13ZM4.00221 6.06652L5.00221 21.0665L6.99779 20.9335L5.99779 5.93348L4.00221 6.06652ZM6 22H18V20H6V22ZM18.9978 21.0665L19.9978 6.06652L18.0022 5.93348L17.0022 20.9335L18.9978 21.0665ZM19 5H5V7H19V5ZM3 7H5V5H3V7ZM19 7H21V5H19V7ZM9 11V16H11V11H9ZM13 11V16H15V11H13ZM12 4C13.3965 4 14.5725 4.95512 14.9055 6.24926L16.8424 5.75074C16.2874 3.59442 14.3312 2 12 2V4ZM9.09445 6.24926C9.42754 4.95512 10.6035 4 12 4V2C9.66883 2 7.71258 3.59442 7.15758 5.75074L9.09445 6.24926Z" fill="#666666"/>
+              </svg>
+              Deleted
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="col-md-8 offset-md-1 mb-5">
+        <div class="row">
+          <div class="col-6">
+            <h1 class="h1">All photos</h1>
+            <div class="h6">150 items</div>
+          </div>
+          <div class="col-6 d-flex justify-content-end align-items-center">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-dark">Newest</button>
+              <button type="button" class="btn btn-light">Latest</button>
+            </div>
+          </div>
+        </div>
+        <div id="photos" class="row mt-4"></div>
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <button class="btn btn-dark" id="load-items" data-page-num="1">Load more...</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>

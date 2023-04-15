@@ -41,7 +41,7 @@ import * as bootstrap from 'bootstrap';
       const text = this.generateCardText(this.lorem);
       return `
         <div class="col-md-6 mb-4">
-          <div class="card">
+          <article class="card">
             <img src="${item.download_url}" class="card-img-top" alt="${item.author}">
             <div class="card-body">
               <div class="h2 card-title">${item.author}</div>   
@@ -49,11 +49,11 @@ import * as bootstrap from 'bootstrap';
               <span class="link-dark d-none unfold">Show more...</span>  
               <span class="link-dark d-none fold">Show less</span>
             </div>
-            <div class="card-footer bg-transparent">
+            <footer class="card-footer bg-transparent">
                 <a href="#" class="btn btn-primary text-white me-3 mb-0 mb-md-2 mb-lg-0">Save to collection</a>
                 <a href="#" class="btn btn-light">Share</a>
-            </div>
-          </div>
+            </footer>
+          </article>
         </div>      
       `;
     },

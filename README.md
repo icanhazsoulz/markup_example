@@ -1,4 +1,4 @@
-# Markup Test Project
+# Markup Project
 
 Bootstrap webpack boilerplate is used for the project.
 
